@@ -27,7 +27,7 @@ Today we’ll cover the fundamentals of C++ programming and start coding your fi
 To follow along and practice today’s lessons:
 
 - 💻 **PC / Laptop**: Dev C++  
-- 📱 **Android Mobile**: Coding C++ 
+- 📱 **Android Mobile**: CxxDroid  
 
 ---
 
@@ -35,7 +35,7 @@ To follow along and practice today’s lessons:
 
 A **variable** is a named container used to store data in memory.
 
-```cpp
+``cpp
 int age = 20;        // integer variable
 float price = 99.5;  // floating-point variable
 char grade = 'A';    // character variable
@@ -73,7 +73,7 @@ bool	1 byte	true / false
 
 ➕ Operators
 
-1️⃣ Arithmetic Operators
+Arithmetic Operators
 
 int a = 10, b = 5;
 cout << a + b << endl; // Addition
@@ -82,20 +82,20 @@ cout << a * b << endl; // Multiplication
 cout << a / b << endl; // Division
 cout << a % b << endl; // Modulus
 
-2️⃣ Assignment Operator
+Assignment Operator
 
 int x = 5;
 x += 3; // x = 8
 x -= 2; // x = 6
 
-3️⃣ Precedence of Operators
+Precedence of Operators
 
 Multiplication (*) / Division (/) > Addition (+) / Subtraction (-)
 
 Parentheses () have highest precedence
 
 
-int result = 2 + 3 * 4;      // 14, not 20
+int result = 2 + 3 * 4;      // 14
 int correct = (2 + 3) * 4;   // 20
 
 
@@ -190,71 +190,142 @@ Use comments and experiment with integer overflow
 
 ---
 
-Agar chaho, main ab **Day 3 ka README** bhi ek hi baar ready kar doon, jisme **loops + nested statements** cover ho, ready-to-paste style.  
+Ye README **final, polished, ready-to-paste** hai **Day 1 folder ke liye**.  
 
-Chahte ho main Day 3 bhi bana doon?| double    | Larger decimals  | 99.999  |
-| char      | Single character | 'A'     |
-| bool      | True/False       | true    |
-| string    | Text             | "Hello" |
+Agar chaho, main **Day 2 aur Day 3 ke READMEs bhi ek hi style me** complete bana doon, ready-to-publish format me.  
+
+Chahte ho main Day 2 aur Day 3 bhi bana doon?
+##🔢 Data Types & Variable Range
+
+Data Type	Size (Approx)	Range
+
+int	4 bytes	-2,147,483,648 to 2,147,483,647
+float	4 bytes	1.2E-38 to 3.4E+38
+double	8 bytes	2.3E-308 to 1.7E+308
+char	1 byte	-128 to 127 (ASCII)
+bool	1 byte	true / false
+
+
+> Tip: Always choose the appropriate type for memory efficiency.
+
+
+
 
 ---
 
-## ➕ Operators in C++
+##➕ Operators
 
-### Arithmetic Operators
+##1️⃣ Arithmetic Operators
 
-```cpp
 int a = 10, b = 5;
-cout << a + b << endl;  // 15
-cout << a - b << endl;  // 5
-cout << a * b << endl;  // 50
-cout << a / b << endl;  // 2
-cout << a % b << endl;  // 0
-```
+cout << a + b << endl; // Addition
+cout << a - b << endl; // Subtraction
+cout << a * b << endl; // Multiplication
+cout << a / b << endl; // Division
+cout << a % b << endl; // Modulus
 
-### Assignment Operators
+##2️⃣ Assignment Operator
 
-```cpp
-int a = 5;
-a += 3; // a = 8
-a -= 2; // a = 6
-```
+int x = 5;
+x += 3; // x = 8
+x -= 2; // x = 6
 
-### Comparison Operators
+##3️⃣ Precedence of Operators
 
-```cpp
-a == b; // equal
-a != b; // not equal
-a > b;  // greater than
-a < b;  // less than
-```
+Multiplication (*) / Division (/) > Addition (+) / Subtraction (-)
 
-### Logical Operators
+Parentheses () have highest precedence
 
-```cpp
-a > 5 && b < 10; // AND
-a > 5 || b < 10; // OR
-!true;           // NOT
-```
+
+int result = 2 + 3 * 4;      // 14, not 20
+int correct = (2 + 3) * 4;   // 20
+
 
 ---
 
-## 🧪 Practice Task
+##💬 Comments
 
-- Write a program that takes **two numbers**, performs arithmetic operations, and displays results.
-- Experiment with **variables and different data types**.
+// This is a single-line comment
+
+/*
+This is a
+multi-line comment
+*/
+
 
 ---
 
-## 📈 Outcome
+##🧮 Examples
+
+##Adding Two Integers
+
+int a, b;
+cout << "Enter two numbers: ";
+cin >> a >> b;
+cout << "Sum: " << a + b << endl;
+
+##Using Character
+
+char grade;
+cout << "Enter your grade: ";
+cin >> grade;
+cout << "Your grade: " << grade << endl;
+
+
+---
+
+##⚠️ Integer Overflow Example
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int maxInt = 2147483647; // maximum int
+    cout << maxInt + 1 << endl; // overflow occurs
+    return 0;
+}
+
+
+---
+
+##🔄 Code Flow
+
+C++ executes statements sequentially, from top to bottom.
+Use this understanding to write structured programs.
+
+
+---
+
+##🧪 Practice Tasks
+
+1. Declare different types of variables and print their values.
+
+
+2. Take two integers from the user and display their sum.
+
+
+3. Experiment with arithmetic operators and precedence.
+
+
+4. Try entering values that cause integer overflow.
+
+
+
+
+---
+
+##📈 Outcome
 
 After completing Day 1, you should be able to:
 
-- Understand course structure
-- Declare and use variables
-- Work with basic data types
-- Perform operations using operators
+Understand C++ variables, keywords, data types, and operators
+
+Write basic programs with proper code flow
+
+Use comments and experiment with integer overflow
+
+
 
 ---
 
-⭐ **Keep coding and enjoy your C++ journey!** 🚀
+##⭐ Keep coding and enjoy your C++ journey! 🚀
