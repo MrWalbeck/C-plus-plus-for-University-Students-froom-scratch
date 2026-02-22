@@ -4,4 +4,4 @@ Write a C++ program that:
 3. Displays "Your answer is even" if the number is even
 4. Displays "Your answer is odd" if the number is odd
 
-Note: Use the modulo operator (%) to determine if a number is divisible by 2.
+Note: Use the modulus operator (%) to determine if a number is divisible by 2.
