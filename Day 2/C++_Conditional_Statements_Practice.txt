@@ -1,0 +1,138 @@
+================================================================================
+                    C++ CONDITIONAL STATEMENTS PRACTICE
+                              (30 Questions)
+================================================================================
+
+🔹 IF STATEMENT (10 Questions)
+────────────────────────────────────────────────────────────────────────────
+
+1. Write a program to check if a number is divisible by 5.
+
+2. Write a program that inputs a character. If it is an uppercase letter, 
+   print "Uppercase letter".
+
+3. Write a program that inputs a number. If it is a multiple of 10, 
+   print "Multiple of 10".
+
+4. Write a program that inputs your age. If age is greater than or equal to 60, 
+   print "Senior Citizen".
+
+5. Write a program that inputs a temperature. If it is above 40 degrees, 
+   print "Very Hot".
+
+6. Write a program that inputs a number. If it is a prime number, 
+   print "Prime number".
+
+7. Write a program that inputs a password. If it equals "admin", 
+   print "Login successful".
+
+8. Write a program that inputs a number. If it is less than 100, 
+   print "Small number".
+
+9. Write a program that inputs a day number (1–7). If it is 1, 
+   print "Sunday".
+
+10. Write a program that inputs a score. If the score is greater than or equal 
+    to 90, print "Excellent".
+
+
+🔹 IF-ELSE STATEMENT (10 Questions)
+────────────────────────────────────────────────────────────────────────────
+
+1. Write a program that inputs a number. Print "Positive" if greater than 0, 
+   else print "Negative or Zero".
+
+2. Write a program that inputs a number. Print "Even" if divisible by 2, 
+   else print "Odd".
+
+3. Write a program that inputs a year. Print "Leap year" if divisible by 4, 
+   else print "Not a leap year".
+
+4. Write a program that inputs a character. Print "Vowel" if it is a vowel 
+   (a, e, i, o, u), else print "Consonant".
+
+5. Write a program that inputs marks. If marks are greater than or equal to 50, 
+   print "Pass", else print "Fail".
+
+6. Write a program that inputs a number. If divisible by 3, print 
+   "Divisible by 3", else print "Not divisible by 3".
+
+7. Write a program that inputs a number. If greater than 1000, print 
+   "Large number", else print "Small number".
+
+8. Write a program that inputs a password. If correct (compare with a predefined 
+   password), print "Access granted", else print "Access denied".
+
+9. Write a program that inputs a number. If it is odd, print "Odd number", 
+   else print "Even number".
+
+10. Write a program that inputs a temperature. If less than 0, print "Freezing", 
+    else print "Not freezing".
+
+
+🔹 IF-ELSE-IF STATEMENT (10 Questions)
+────────────────────────────────────────────────────────────────────────────
+
+1. Write a program that inputs marks and prints the grade:
+   - Marks ≥ 80 → "Grade A"
+   - Marks ≥ 60 → "Grade B"
+   - Marks ≥ 40 → "Grade C"
+   - Marks < 40 → "Fail"
+
+2. Write a program that inputs a number and checks:
+   - Number > 0 → "Positive"
+   - Number = 0 → "Zero"
+   - Number < 0 → "Negative"
+
+3. Write a program that inputs a month number (1–12) and prints the season:
+   - Months 12, 1, 2 → "Winter"
+   - Months 3, 4, 5 → "Spring"
+   - Months 6, 7, 8 → "Summer"
+   - Months 9, 10, 11 → "Autumn"
+
+4. Write a program that inputs an age and prints the category:
+   - Age < 13 → "Child"
+   - Age 13–19 → "Teenager"
+   - Age 20–59 → "Adult"
+   - Age ≥ 60 → "Senior Citizen"
+
+5. Write a program that inputs a cricket score and prints:
+   - Score ≥ 100 → "Century"
+   - Score ≥ 50 → "Half-century"
+   - Score ≥ 1 → "Runs scored"
+   - Score = 0 → "Duck"
+
+6. Write a program that inputs a number and checks:
+   - Divisible by 2 → "Even"
+   - Divisible by 3 → "Divisible by 3"
+   - Divisible by 5 → "Divisible by 5"
+   - Else → "Not divisible by 2, 3, or 5"
+
+7. Write a program that inputs a grade point (GPA) and prints:
+   - GPA ≥ 3.5 → "Excellent"
+   - GPA ≥ 3.0 → "Good"
+   - GPA ≥ 2.0 → "Average"
+   - GPA < 2.0 → "Poor"
+
+8. Write a program that inputs a day number (1–7) and prints:
+   - 1 → "Sunday"
+   - 2 → "Monday"
+   - 3 → "Tuesday"
+   - 4 → "Wednesday"
+   - 5 → "Thursday"
+   - 6 → "Friday"
+   - 7 → "Saturday"
+
+9. Write a program that inputs a temperature and prints:
+   - Temperature ≥ 40 → "Hot"
+   - Temperature ≥ 20 → "Warm"
+   - Temperature ≥ 10 → "Cool"
+   - Temperature < 10 → "Cold"
+
+10. Write a program that inputs a number and checks:
+    - Multiple of 2 → "Multiple of 2"
+    - Multiple of 3 → "Multiple of 3"
+    - Multiple of 7 → "Multiple of 7"
+    - Else → "Not a multiple of 2, 3, or 7"
+
+================================================================================
