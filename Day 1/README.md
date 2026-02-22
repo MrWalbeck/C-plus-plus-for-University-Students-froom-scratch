@@ -65,7 +65,7 @@ bool passed = true;
 
 ## ➕ Operators in C++
 
-##1️⃣ Arithmetic Operators
+### 1️⃣ Arithmetic Operators
 
 ```cpp
 int a = 10, b = 5;
@@ -76,7 +76,7 @@ cout << a / b << endl;  // 2
 cout << a % b << endl;  // 0
 ```
 
-### Assignment Operators
+### 2️⃣ Assignment Operators
 
 ```cpp
 int a = 5;
@@ -84,7 +84,7 @@ a += 3; // a = 8
 a -= 2; // a = 6
 ```
 
-### Comparison Operators
+### 3️⃣ Comparison Operators
 
 ```cpp
 a == b; // equal
@@ -93,7 +93,7 @@ a > b;  // greater than
 a < b;  // less than
 ```
 
-### Logical Operators
+### 4️⃣ Logical Operators
 
 ```cpp
 a > 5 && b < 10; // AND
