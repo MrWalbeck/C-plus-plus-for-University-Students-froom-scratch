@@ -1,4 +1,4 @@
-# 📅 Day 1 — Course Overview, Variables, Data Types & Operators
+no# 📅 Day 1 — Course Overview, Variables, Data Types & Operators
 
 Welcome to **Day 1** of the *C++ From Scratch for University Students* journey! 🚀  
 Today we’ll cover the basics of C++, get familiar with variables, data types, operators, and start coding your first programs.
@@ -19,7 +19,7 @@ Today we’ll cover the basics of C++, get familiar with variables, data types, 
 To follow along and practice today’s lessons:
 
 - 💻 **PC / Laptop**: Dev C++  
-- 📱 **Android Mobile**: CxxDroid  
+- 📱 **Android Mobile**: Coding C++ 
 
 ---
 
