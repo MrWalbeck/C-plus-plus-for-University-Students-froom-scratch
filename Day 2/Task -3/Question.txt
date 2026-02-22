@@ -1,0 +1,10 @@
+Write a C++ program that:
+1. Takes input for marks in 5 subjects: English, Math, Computer, Physics, and Islamiyat
+2. Calculates the total marks obtained
+3. Calculates the percentage (out of 500 total marks)
+4. Displays the grade based on the following criteria:
+    - A: percentage > 80
+    - B: percentage > 70
+    - C: percentage > 60
+    - D: percentage > 50
+    - F: percentage ≤ 50

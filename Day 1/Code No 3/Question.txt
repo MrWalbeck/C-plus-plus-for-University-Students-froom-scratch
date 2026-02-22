@@ -1,0 +1,9 @@
+Write a C++ program that demonstrates all basic arithmetic operations.
+Create a program that:
+1. Declares two integer variables
+2. Performs and displays the following operations:
+    - Addition of num1 and num2
+    - Subtraction of num1 and num2
+    - Multiplication of num1 and num2
+    - Division of num1 by num2
+    - Modulus (remainder) of num1 divided by num2

@@ -1,0 +1,8 @@
+Write a C++ program that displays "Hello World!" to the console.
+
+Requirements:
+- Include the necessary header for input/output operations
+- Use the standard namespace
+- Create a main function
+- Output the text "Hello World!" using cout
+- Ensure the program compiles and runs without errors

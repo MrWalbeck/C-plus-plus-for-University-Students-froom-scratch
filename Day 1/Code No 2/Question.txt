@@ -1,0 +1,6 @@
+Question:
+Write a C++ program that displays student information including:
+- Student Name
+- Class
+- Department
+- University
