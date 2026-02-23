@@ -3,7 +3,7 @@
 
 
  
- <a href="https://cppprogramming.netlify.app/"><img width="1920" height="1080" alt="Learn C++ from Scratch" src="https://github.com/user-attachments/assets/d2449121-bb99-4640-80af-e522b8a53734" /></a>
+ <img width="1920" height="1080" alt="Learn C++ from Scratch" src="https://github.com/user-attachments/assets/d2449121-bb99-4640-80af-e522b8a53734" />
 
 
   C++ Programming for Beginners <br> <i>Basic to Advance</i> 
