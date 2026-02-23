@@ -40,8 +40,6 @@ Visit <a href="https://c-cpp-programming.netlify.app/" target="_blank"> here </a
  
   - [Introduction to C++](#introduction-to-c++)
  
-  - [Introduction to C](#introducion-to-c)
- 
   - [Differences](#differences) 
  
   - [Compiler](#compiler)
@@ -84,42 +82,7 @@ Visit <a href="https://c-cpp-programming.netlify.app/" target="_blank"> here </a
   Visit <a href="https://cppprogramming.netlify.app/" target="_blank"> here </a> for full course
 </details>
 
-<details><summary>C Basics</summary>
- 
- - [Syntax](/Tutorials/C%20Basic%20Tutorials/README.md)
- 
- - [Comments](#comments)
- 
- - [Variables](#variables)
 
-  - [Keywords](#keywords)
- 
- - [Data Types](#data-types)
- 
- - [Operators](#operators)
- 
- - [IF Statement](#if-statement) 
- 
- - [Switch](#switch)
- 
- - [Loop Type](#loop-type)
- 
- - [Pointer](#pointer)
- 
- - [Arrays](#arrays)
- 
- - [Functons](#functions)
- 
- - [Structure](#structure)
- 
- - [File Handling](#file-handling)
- 
-</details>
-
-<details><summary>C Advance (GUI)</summary>
-  Visit <a href="https://cppprogramming.netlify.app/" target="_blank"> here </a> for full course
-</details>
- 
 
  <details><summary>Download App</summary>
   
@@ -129,9 +92,7 @@ Visit <a href="https://c-cpp-programming.netlify.app/" target="_blank"> here </a
 
   </details>
 
-  - [How To Contribute](#how-to-contribute)
-  - [Contributors](#contributors)
-  - [Info](#info)
+
 
 
 
@@ -191,7 +152,7 @@ I will be using `Visual Studio Code` in this Project, which I believe is a good 
 
 You can find the latest version of VSCode at https://code.visualstudio.com/. 
 
-Follow this <a href="https://github.com/The-Young-Programmer/C-CPP-Programming/blob/main/Projects/README.md" target="_blank"> process to install and setup VSCode </a>, which will install the text editor with a compiler.
+Follow this <a href="https://github.com/MrWalbeck/CPP-Programming/blob/main/Projects/README.md" target="_blank"> process to install and setup VSCode </a>, which will install the text editor with a compiler.
 </p>
 
 ### Quick Start :
