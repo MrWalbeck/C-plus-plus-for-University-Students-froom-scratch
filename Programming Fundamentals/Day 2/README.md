@@ -217,7 +217,3 @@ By the end of Day 2, you should be able to:
 ---
 
 ⭐ **Keep practicing and building your C++ foundation!** 🚀
-
-```
-
----

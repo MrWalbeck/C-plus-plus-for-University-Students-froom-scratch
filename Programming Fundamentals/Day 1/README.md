@@ -108,6 +108,43 @@ char grade = 'A';
 bool passed = true;
 ```
 
+## 🏷 Naming Rules (Identifiers)
+
+In C++, an **identifier** is the name given to variables, functions, or other user-defined items. Follow these rules to write valid identifiers:
+
+1. **Allowed Characters:**  
+   - Letters (`a-z`, `A-Z`)  
+   - Digits (`0-9`)  
+   - Underscores (`_`)  
+
+2. **Cannot Start with a Digit:**  
+   - Valid: `var1`, `_value`  
+   - Invalid: `123var` ❌  
+
+3. **Cannot Use Reserved Keywords:**  
+   Keywords like `int`, `return`, `void`, `if`, etc., **cannot** be used as identifiers.  
+   - Invalid: `int = 5;` ❌  
+   - Valid: `myInt = 5;` ✅  
+
+4. **Case-Sensitive:**  
+   - `number` and `Number` are **different identifiers** in C++.  
+   - Always be consistent with capitalization.  
+
+5. **Best Practices:**  
+   - Use descriptive names (`studentAge`, `totalMarks`)  
+   - Avoid single-letter names except for loop counters (`i`, `j`)  
+   - Maintain readability with underscores or camelCase  
+
+### ✅ Example
+
+```cpp
+int studentAge = 20;      // Valid
+float _price = 99.5;      // Valid
+char grade = 'A';          // Valid
+int 123value = 50;        // ❌ Invalid, starts with a digit
+int return = 5;           // ❌ Invalid, keyword
+```
+
 ---
 
 # 🔑 Keywords in C++
@@ -132,6 +169,7 @@ if, else, while, for, return, void
 | float     | Decimal numbers  | 4 bytes | ~7 digits precision  |
 | double    | Large decimals   | 8 bytes | ~15 digits precision |
 | bool      | Logical values   | 1 byte  | true / false         |
+| string    | Text (sequence of characters) | Depends on content | "Hello" |
 
 ---
 
@@ -164,8 +202,28 @@ x -= 2;  // x = 6
 
 ## 3️⃣ Comparison (Relational) Operators
 
-```
-==   !=   >   <   >=   <=
+Relational operators are used to **compare two values**. They return `true` or `false`.
+
+| Operator | Name                     | Description                                       | Example  |
+| -------- | ------------------------ | ------------------------------------------------- | -------- |
+| `==`     | Equal to                 | Checks if two values are equal                    | `a == b` |
+| `!=`     | Not equal to             | Checks if two values are not equal                | `a != b` |
+| `>`      | Greater than             | Checks if left value is greater than right        | `a > b`  |
+| `<`      | Less than                | Checks if left value is less than right           | `a < b`  |
+| `>=`     | Greater than or equal to | Checks if left value is greater or equal to right | `a >= b` |
+| `<=`     | Less than or equal to    | Checks if left value is less or equal to right    | `a <= b` |
+
+**Example:**
+
+```cpp
+int a = 10, b = 20;
+
+cout << (a == b) << endl;  // 0 (false)
+cout << (a != b) << endl;  // 1 (true)
+cout << (a > b) << endl;   // 0 (false)
+cout << (a < b) << endl;   // 1 (true)
+cout << (a >= b) << endl;  // 0 (false)
+cout << (a <= b) << endl;  // 1 (true)
 ```
 
 ---
@@ -281,7 +339,3 @@ By the end of Day 1, I can:
 ---
 
 ⭐ **Keep practicing and building your C++ foundation!** 🚀
-
-```
-
----
