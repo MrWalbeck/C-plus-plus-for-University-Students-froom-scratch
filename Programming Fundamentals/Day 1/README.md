@@ -8,6 +8,29 @@
 
 ---
 
+## 📌 Table of Contents
+- [Overview](#overview)
+- [Topics Covered](#topics-covered)
+- [Development Environment](#development-environment)
+- [First Program — Hello World](#first-program--hello-world)
+- [Variables in C++](#variables-in-c)
+- [Naming Rules (Identifiers)](#naming-rules-identifiers)
+- [Keywords in C++](#keywords-in-c)
+- [Data Types & Variable Range](#data-types--variable-range)
+- [Operators in C++](#operators-in-c)
+  - [Arithmetic Operators](#arithmetic-operators)
+  - [Assignment Operators](#assignment-operators)
+  - [Relational Operators](#comparison-relational-operators)
+  - [Logical Operators](#logical-operators)
+  - [Operator Precedence](#operator-precedence)
+- [Comments in C++](#comments-in-c)
+- [Practical Examples](#practical-examples)
+- [Integer Overflow](#integer-overflow)
+- [Code Flow](#code-flow)
+- [Day 1 Summary](#day-1-summary)
+
+---
+
 ## 📖 Overview
 
 Day 1 focuses on building a **strong foundation in C++ programming**.  
@@ -147,15 +170,31 @@ int return = 5;           // ❌ Invalid, keyword
 
 ---
 
-# 🔑 Keywords in C++
+## 🔑 Keywords in C++
 
-Keywords are reserved words and cannot be used as identifiers.
+Keywords are **reserved words** in C++ with predefined meanings.  
+They **cannot be used as identifiers** (variable names, function names, etc.).
 
-Examples:
+### Common C++ Keywords
 
-```
+```cpp
 int, float, double, char, bool,
-if, else, while, for, return, void
+if, else, while, for, return, void,
+break, continue, switch, case, default
+````
+
+**Example of Invalid Use:**
+
+```cpp
+int return = 5;  // ❌ Invalid, 'return' is a keyword
+float int = 3.14; // ❌ Invalid, 'int' is a keyword
+```
+
+**Example of Valid Use:**
+
+```cpp
+int age = 20;        // ✅ Valid
+float price = 99.5;  // ✅ Valid
 ```
 
 ---
@@ -176,26 +215,70 @@ if, else, while, for, return, void
 # ➗ Operators in C++
 
 ## 1️⃣ Arithmetic Operators
+Arithmetic operators are used to **perform mathematical calculations**.
+
+| Operator | Name           | Description                 | Example |
+| -------- | -------------- | --------------------------- | ------- |
+| `+`      | Addition       | Adds two operands           | `a + b` |
+| `-`      | Subtraction    | Subtracts second from first | `a - b` |
+| `*`      | Multiplication | Multiplies two operands     | `a * b` |
+| `/`      | Division       | Divides first by second     | `a / b` |
+| `%`      | Modulus        | Remainder after division    | `a % b` |
+
+### Example
 
 ```cpp
-int a = 10, b = 5;
+#include <iostream>
+using namespace std;
 
-cout << a + b << endl;  // Addition
-cout << a - b << endl;  // Subtraction
-cout << a * b << endl;  // Multiplication
-cout << a / b << endl;  // Division
-cout << a % b << endl;  // Modulus
+int main() {
+    int a = 10, b = 3;
+
+    cout << "Addition: " << a + b << endl;       // 13
+    cout << "Subtraction: " << a - b << endl;    // 7
+    cout << "Multiplication: " << a * b << endl; // 30
+    cout << "Division: " << a / b << endl;       // 3
+    cout << "Modulus: " << a % b << endl;        // 1
+
+    return 0;
+}
 ```
 
 ---
 
 ## 2️⃣ Assignment Operators
 
-```cpp
-int x = 5;
+Assignment operators are used to **store or update values in variables**.  
+They combine arithmetic operations with assignment to simplify code.
 
-x += 3;  // x = 8
-x -= 2;  // x = 6
+| Operator | Description                  | Example                  |
+|----------|------------------------------|-------------------------|
+| `=`      | Assign value                 | `a = 5;`               |
+| `+=`     | Add and assign               | `a += 3;` → `a = a + 3` |
+| `-=`     | Subtract and assign          | `a -= 2;` → `a = a - 2` |
+| `*=`     | Multiply and assign          | `a *= 4;` → `a = a * 4` |
+| `/=`     | Divide and assign            | `a /= 2;` → `a = a / 2` |
+| `%=`     | Modulus and assign           | `a %= 3;` → `a = a % 3` |
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10;
+
+    a += 5;  // a = 15
+    a -= 3;  // a = 12
+    a *= 2;  // a = 24
+    a /= 4;  // a = 6
+    a %= 4;  // a = 2
+
+    cout << "Final value of a: " << a << endl;
+
+    return 0;
+}
 ```
 
 ---
@@ -212,6 +295,8 @@ Relational operators are used to **compare two values**. They return `true` or `
 | `<`      | Less than                | Checks if left value is less than right           | `a < b`  |
 | `>=`     | Greater than or equal to | Checks if left value is greater or equal to right | `a >= b` |
 | `<=`     | Less than or equal to    | Checks if left value is less or equal to right    | `a <= b` |
+
+---
 
 **Example:**
 
@@ -230,45 +315,112 @@ cout << (a <= b) << endl;  // 1 (true)
 
 ## 4️⃣ Logical Operators
 
-```
-&&   (AND)
-||   (OR)
-!    (NOT)
+Logical operators are used to **combine or invert boolean expressions**.  
+They return `true` or `false`.
+
+| Operator | Name     | Description                         | Example               |
+|----------|---------|-------------------------------------|----------------------|
+| `&&`     | AND     | True if **both** conditions are true | `(a > 5 && b < 10)` |
+| `||`     | OR      | True if **at least one** condition is true | `(a > 5 || b < 10)` |
+| `!`      | NOT     | Inverts the boolean value           | `!(a == b)`          |
+
+---
+
+### Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b = 5;
+
+    if (a > 5 && b < 10) {
+        cout << "Both conditions are true" << endl;
+    }
+
+    if (a > 5 || b > 10) {
+        cout << "At least one condition is true" << endl;
+    }
+
+    if (!(a == b)) {
+        cout << "a is not equal to b" << endl;
+    }
+
+    return 0;
+}
 ```
 
 ---
 
-# 🧮 Operator Precedence
+## 5️⃣ Operator Precedence
 
-Order of execution:
+Operator precedence defines the **order in which operators are evaluated** in an expression.
+Knowing precedence helps prevent logical errors in calculations and conditions.
 
-1. Parentheses `( )` — Highest
-2. `*  /  %`
-3. `+  -` — Lowest
+### Precedence Table (Common Operators)
+
+| Precedence | Operators            | Description                       |   |            |
+| ---------- | -------------------- | --------------------------------- | - | ---------- |
+| Highest    | `()`                 | Parentheses                       |   |            |
+| High       | `*`, `/`, `%`        | Multiplication, Division, Modulus |   |            |
+| Medium     | `+`, `-`             | Addition, Subtraction             |   |            |
+| Low        | `<`, `>`, `<=`, `>=` | Relational Operators              |   |            |
+| Lower      | `==`, `!=`           | Equality / Inequality             |   |            |
+| Lowest     | `&&`                 | Logical AND                       |   |            |
+| Lowest     | `                    |                                   | ` | Logical OR |
+
+---
 
 ### Example
 
-```
-2 + 3 * 4  = 14
-(2 + 3) * 4 = 20
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 2 + 3 * 4;      // Multiplication first → 2 + 12 = 14
+    int b = (2 + 3) * 4;    // Parentheses first → 5 * 4 = 20
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    return 0;
+}
 ```
 
 ---
 
 # 💬 Comments in C++
 
-```cpp
-// Single-line comment
 
-/*
-Multi-line
-comment
-*/
+Comments are **non-executable lines** used to explain your code.
+They help improve **readability, maintainability, and debugging**.
+
+### Types of Comments
+
+1. **Single-line Comment**
+
+```cpp
+// This is a single-line comment
+int a = 5;  // Comment after code
 ```
 
-Comments improve readability and maintainability.
+2. **Multi-line Comment**
+
+```cpp
+/*
+This is a multi-line comment
+Useful for explanations or documentation
+*/
+int b = 10;
+```
+
+✅ **Tip:** Always comment your code, especially when it contains **complex logic**.
+✅ Comments do **not affect program execution**.
 
 ---
+
 
 # 🧪 Practical Examples
 
