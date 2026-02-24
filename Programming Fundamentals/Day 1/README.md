@@ -1,33 +1,10 @@
 # 🚀 Programming Fundamentals (COC1071) — Day 01  
-### C++ From Scratch for University Students
+### C++ From Scratch
 
 > 📚 Course: Programming Fundamentals  
 > 🏫 Code: COC1071  
 > 💻 Language: C++  
 > 🎯 Focus: Core Syntax, Variables, Data Types & Operators  
-
----
-
-## 📌 Table of Contents
-- [Overview](#overview)
-- [Topics Covered](#topics-covered)
-- [Development Environment](#development-environment)
-- [First Program — Hello World](#first-program--hello-world)
-- [Variables in C++](#variables-in-c)
-- [Naming Rules (Identifiers)](#naming-rules-identifiers)
-- [Keywords in C++](#keywords-in-c)
-- [Data Types & Variable Range](#data-types--variable-range)
-- [Operators in C++](#operators-in-c)
-  - [Arithmetic Operators](#arithmetic-operators)
-  - [Assignment Operators](#assignment-operators)
-  - [Relational Operators](#comparison-relational-operators)
-  - [Logical Operators](#logical-operators)
-  - [Operator Precedence](#operator-precedence)
-- [Comments in C++](#comments-in-c)
-- [Practical Examples](#practical-examples)
-- [Integer Overflow](#integer-overflow)
-- [Code Flow](#code-flow)
-- [Day 1 Summary](#day-1-summary)
 
 ---
 
