@@ -29,6 +29,13 @@ To practice today’s lessons:
 
 `cin` is used to take input from the user.
 
+### Syntax
+
+```cpp
+int a;
+cin>>a;
+```
+### Example
 ```cpp
 #include <iostream>
 using namespace std;
@@ -47,6 +54,8 @@ int main() {
 ## 🔹 Sequence of Statements
 
 C++ executes statements **one after another in order**.
+
+### Syntax
 
 ```cpp
 #include <iostream>
@@ -68,6 +77,16 @@ int main() {
 
 Executes a block **only if a condition is true**.
 
+### Syntax
+
+```cpp
+if(condition)
+{
+ statement(s)
+}
+```
+### Example
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -88,6 +107,20 @@ int main() {
 ### 2️⃣ `if-else` Statement
 
 Executes one block if the condition is true, **another if false**.
+
+### Syntax
+
+```cpp
+if(condition)
+{
+ statement(s)
+}
+else
+{
+ statement(s)
+}
+```
+### Example
 
 ```cpp
 #include <iostream>
@@ -111,6 +144,24 @@ int main() {
 ### 3️⃣ `if-else-if` Ladder
 
 Checks multiple conditions **in sequence**.
+
+### Syntax
+
+```cpp
+if(condition)
+{
+ statement(s)
+}
+else if(condition)
+{
+ statement(s)
+}
+else
+{
+ statement(s)
+}
+```
+### Example
 
 ```cpp
 #include <iostream>
