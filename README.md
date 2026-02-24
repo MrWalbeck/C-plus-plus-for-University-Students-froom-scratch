@@ -12,14 +12,6 @@
 <p align="center">
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white">
 <br><br>
-<img src="https://img.shields.io/github/license/The-Young-Programmer/C-CPP-Programming-Project?logo=mit">
-<img src="https://img.shields.io/github/stars/The-Young-Programmer/C-CPP-Programming-Project?logo=github">
-<img src="https://img.shields.io/github/issues/The-Young-Programmer/C-CPP-Programming-Project?logo=github">
-<img src="https://komarev.com/ghpvc/?username=C-CPP-Programming-Project&label=Visitors&color=0e75b6&style=flat"/> 
-<a href="https://github.com/The-Young-Programmer/C-CPP-Programming-Project/issues">
-<img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat">
-</a>
-<a href="#"><img src="https://badge.fury.io/gh/tterb%2FHyde.svg"</a>
 <!--[![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)]()-->  
 
 </p>
