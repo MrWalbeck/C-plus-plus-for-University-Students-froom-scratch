@@ -11,7 +11,7 @@
 
 <p align="center">
 <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white">
-<br><br>
+<br>
 <!--[![GitHub Release](https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat)]()-->  
 
 </p>
