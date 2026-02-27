@@ -1,4 +1,5 @@
 # 🚀 Programming Fundamentals (COC1071) — Day 02  
+
 ### Input, Sequence & Selection Statements
 
 > 📚 Course: Programming Fundamentals  

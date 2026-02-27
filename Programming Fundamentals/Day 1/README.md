@@ -1,4 +1,5 @@
 # 🚀 Programming Fundamentals (COC1071) — Day 01  
+
 ### C++ From Scratch
 
 > 📚 Course: Programming Fundamentals  
