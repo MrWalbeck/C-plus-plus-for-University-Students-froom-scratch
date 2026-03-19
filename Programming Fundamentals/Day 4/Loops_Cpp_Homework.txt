@@ -1,0 +1,38 @@
+============================================================
+                C++ LOOPS – DAY 4 (HOMEWORK)
+============================================================
+
+1) FOR LOOP
+-----------
+- Write a program using a for loop to print numbers from 1 to 10.
+- Write a program using a for loop to print all even numbers between 1 and 50.
+- Write a program to calculate the sum of first N natural numbers using a for loop.
+
+2) WHILE LOOP
+-------------
+- Write a program using a while loop to print numbers from 10 down to 1.
+- Write a program using a while loop to calculate the factorial of a given number.
+- Write a program to print all multiples of 5 less than 100 using a while loop.
+
+3) DO-WHILE LOOP
+----------------
+- Write a program using a do-while loop to print numbers from 1 to 5.
+- Write a program using a do-while loop to take input from user until they enter 0.
+
+4) NESTED LOOPS
+---------------
+- Write a program to print the following star pattern using nested loops:
+  *
+  * *
+  * * *
+  * * * *
+
+- Write a program to print a number triangle pattern using nested loops:
+  1
+  1 2
+  1 2 3
+  1 2 3 4
+
+- Write a program to display a multiplication table from 1 to 5 using nested loops.
+
+============================================================
