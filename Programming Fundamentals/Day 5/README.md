@@ -26,9 +26,9 @@ A function is a self-contained block of code that performs a specific task. Thin
 
 **Why use functions?**
 
-* **Dry Principle:** Don't Repeat Yourself.
-* **Modularity:** Break big problems into smaller pieces.
-* **Easy Debugging:** Find errors in specific blocks easily.
+* **Modularity:** Breaks big problems into small, easy parts.
+* **Efficiency:** Write the code once and use it many times.
+* **Readability:** Makes your `main()` function clean and organized.
 
 ---
 
