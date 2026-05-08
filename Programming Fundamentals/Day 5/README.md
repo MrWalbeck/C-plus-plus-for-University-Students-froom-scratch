@@ -1,5 +1,3 @@
----
-
 # 🚀 C++ Programming: Mastering Functions (COC1071)
 
 Welcome to **Day 5** of the Programming Fundamentals series. This guide covers everything from the basics to advanced function concepts in C++.
@@ -8,19 +6,17 @@ Welcome to **Day 5** of the Programming Fundamentals series. This guide covers e
 
 ## 📂 Table of Contents
 
-1. [What is a Function?](https://www.google.com/search?q=%231-what-is-a-function)
-2. [Function Architecture (Signature)]()
-3. [Return Types: `void` vs `Data Type]()`
-4. [The 4 Categories of Functions]()
-5. [Parameter Passing: Value vs Reference]()
-6. [Advanced Concepts]()
-* [Function Overloading]()
-* [Default Arguments]()
-* [Inline Functions]()
-* [Recursion (Basic Intro)]()
-
-
-7. [Standard Library Functions]()
+1. [What is a Function?](#what-is-a-function)
+1. [Function Architecture (Signature)](#function-architecture-signature)
+1. [Return Types: `void` vs `Data Type`](#return-types-void-vs-data-type)
+1. [The 4 Categories of Functions](#the-4-categories-of-functions)
+1. [Parameter Passing: Value vs Reference](#parameter-passing-value-vs-reference)
+1. [Advanced Concepts](#advanced-concepts)
+   - Function Overloading
+   - Default Arguments
+   - Inline Functions
+   - Recursion (Basic Intro)
+1. [Standard Library Functions](#standard-library-functions)
 
 ---
 
