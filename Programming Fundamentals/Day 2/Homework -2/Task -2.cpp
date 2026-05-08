@@ -2,26 +2,27 @@
 using namespace std;
 int main()
 {
-	int num1, num2;
-	cout << "Enter 1st value:";
-	cin >> num1;
-	cout << "Enter 2nd value:";
-	cin >> num2;
+	int age, income;
+	char gender;
+	cout << "Enter age: ";
+	cin >> age;
+	cout << "Enter income: ";
+	cin >> income;
+	cout << "Enter gender (M/F): ";
+	cin >> gender;
 
-	if (num1 == num2)
+	if (age > 25 && gender == 'M' && income > 25000)
 	{
-		cout << num1 << " is equal to " << num2;
+		cout << "Sir, You are eligible for loan.";
 	}
-	if (num1 > num2)
+	else if (age > 30 && gender == 'F' && income > 20000)
 	{
-		cout << num1 << " is greater than " << num2;
+		cout << "Mam, You are eligible for loan.";
 	}
-	if (num1 < num2)
+	else
 	{
-		cout << num1 << " is less than " << num2;
+		cout << "You are not eligible for loan.";
 	}
-	if (num1 != num2)
-	{
-		cout << num1 << " is not equal to " << num2;
-	}
+
+	return 0;
 }

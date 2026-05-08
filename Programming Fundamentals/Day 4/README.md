@@ -1,217 +1,58 @@
-# 🚀 Programming Fundamentals (COC1071) — Day 04
-
-## 🔁 Looping Mastery & Iteration Control
-
-> 📘 **Course:** Programming Fundamentals  
-> 🏷 **Code:** COC1071  
-> 💻 **Language:** C++  
-> 🎯 **Focus:** Practical Application of Loops & Iteration  
+# 📝 Programming Fundamentals (COC1071) — Day 5 Test  
+## “The Day of Everything” — Consolidation Assessment
 
 ---
 
 ## 📂 Overview
 
-Welcome to **Day 4** of the *C++ From Scratch* journey! 🚀  
+Welcome to **Day 5**, the consolidation and test day of the *Programming Fundamentals* course.  
 
-In this session, we learn about **loops**, which allow us to execute a block of code multiple times without rewriting it.
+This session focuses on **assessing your understanding of everything learned from Day 1 to Day 4**, including:
 
----
-
-## 📚 Topics Covered
-
-- `for` loop  
-- `while` loop  
-- `do-while` loop  
-- Nested loops  
+- Conditional Statements  
+- Loops  
+- Nested Loops  
+- Problem-Solving and Patterns  
 
 ---
 
-## 🔹 1. for Loop
+## 🎯 Objectives
 
-### 📌 Explanation
+By the end of this test session, students should be able to:
 
-The `for` loop is used when the number of iterations is already known.  
-It has three parts: initialization, condition, and update.
-
-### 📌 Syntax
-
-```cpp
-for (initialization; condition; update)
-{
-    // code block
-}
-```
-
-### 💡 Example
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    for (int i = 1; i <= 5; i++)
-    {
-        cout << i << endl;
-    }
-    return 0;
-}
-```
-
-👉 This loop starts from 1 and prints numbers up to 5.
+- Recall and apply **conditional statements** effectively  
+- Implement **loops** (`for`, `while`, `do-while`) accurately  
+- Create **nested loops** for patterns and tables  
+- Combine concepts from multiple topics to solve problems  
+- Demonstrate understanding of the previous four days’ lessons  
 
 ---
 
-## 🔹 2. while Loop
+## 🗂 Recommended Structure for Test Submission
 
-### 📌 Explanation
+- **Organize code files** by topic:
+  - ConditionalStatements.cpp  
+  - Loops.cpp  
+  - NestedLoops.cpp  
 
-The `while` loop is used when the number of iterations is not known.  
-It runs as long as the condition is true.
-
-### 📌 Syntax
-
-```cpp
-while (condition)
-{
-    // code block
-}
-```
-
-### 💡 Example
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int i = 1;
-
-    while (i <= 5)
-    {
-        cout << i << endl;
-        i++;
-    }
-    return 0;
-}
-```
-
-👉 The loop continues until the condition becomes false.
+- **Documentation**: Include comments and explanations in your code for clarity  
 
 ---
 
-## 🔹 3. do-while Loop
+## ✅ Instructions
 
-### 📌 Explanation
-
-The `do-while` loop executes the code **at least once**, even if the condition is false.
-
-### 📌 Syntax
-
-```cpp
-do
-{
-    // code block
-} while (condition);
-```
-
-### 💡 Example
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int i = 1;
-
-    do
-    {
-        cout << i << endl;
-        i++;
-    } while (i <= 5);
-
-    return 0;
-}
-```
-
-👉 Code runs first, then condition is checked.
+1. Review all lessons from **Day 1 to Day 4** before attempting the test.  
+2. Focus on writing **clean, modular, and well-commented code**.  
+3. Submit **all code files** together with this README.  
+4. Ensure your programs handle **different inputs and edge cases**.  
+5. Use **loops, conditionals, and nested loops** appropriately to solve problems.  
 
 ---
 
-## 🔁 Nested Loops
+## 📌 Notes
 
-### 📌 Explanation
-
-A nested loop means a loop inside another loop.  
-It is commonly used for patterns, tables, and complex logic.
-
----
-
-### 💡 Example 1: Star Pattern
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    for (int i = 1; i <= 3; i++)
-    {
-        for (int j = 1; j <= 3; j++)
-        {
-            cout << "* ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-👉 Outer loop controls rows, inner loop controls columns.
-
----
-
-### 💡 Example 2: Number Pattern
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    for (int i = 1; i <= 3; i++)
-    {
-        for (int j = 1; j <= i; j++)
-        {
-            cout << j << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
-```
-
-👉 Inner loop runs according to outer loop value.
-
----
-
-## ✅ Summary
-
-- Loops help repeat code efficiently  
-- `for` loop → when iterations are known  
-- `while` loop → condition-based loop  
-- `do-while` → runs at least once  
-- Nested loops → used for patterns and complex logic  
-
----
-
-## 🧠 Practice Suggestions
-
-- Print numbers from 1 to 100  
-- Print even/odd numbers  
-- Create multiplication tables  
-- Make star patterns  
+- This test assesses **conceptual understanding and practical application**.  
+- Modular programming is encouraged to reduce redundancy.  
+- Test each program thoroughly before submission.  
 
 ---

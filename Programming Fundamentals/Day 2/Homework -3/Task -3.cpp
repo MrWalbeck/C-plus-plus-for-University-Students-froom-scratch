@@ -1,41 +1,44 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-	float eng, math, comp, phy, is, total, percentage;
+    char op;
+    int num1, num2;
 
-	cout << "Enter your English marks:";
-	cin >> eng;
-	cout << "Enter your Math marks:";
-	cin >> math;
-	cout << "Enter your Computer marks:";
-	cin >> comp;
-	cout << "Enter your Physics marks:";
-	cin >> phy;
-	cout << "Enter your Islamiyat marks:";
-	cin >> is;
+    cout << "Enter your 1st Value: ";
+    cin >> num1;
 
-	total = eng + math + comp + phy + is;
-	percentage = (total / 500) * 100;
+    cout << "Enter Operator (+ - * /): ";
+    cin >> op;
 
-	if (percentage > 80)
-	{
-		cout << "Your Grade is A!";
-	}
-	else if (percentage > 70)
-	{
-		cout << "Your Grade is B!";
-	}
-	else if (percentage > 60)
-	{
-		cout << "Your Grade is C!";
-	}
-	else if (percentage > 50)
-	{
-		cout << "Your Grade is D!";
-	}
-	else
-	{
-		cout << "Your Grade is F!";
-	}
+    cout << "Enter your 2nd Value: ";
+    cin >> num2;
+
+    switch (op)
+    {
+    case '+':
+        cout << num1 << " + " << num2 << " = " << num1 + num2;
+        break;
+
+    case '-':
+        cout << num1 << " - " << num2 << " = " << num1 - num2;
+        break;
+
+    case '*':
+        cout << num1 << " * " << num2 << " = " << num1 * num2;
+        break;
+
+    case '/':
+        if (num2 != 0)
+            cout << num1 << " / " << num2 << " = " << num1 / num2;
+        else
+            cout << "Division by zero is not allowed!";
+        break;
+
+    default:
+        cout << "You Entered Invalid Operator!";
+    }
+
+    return 0;
 }

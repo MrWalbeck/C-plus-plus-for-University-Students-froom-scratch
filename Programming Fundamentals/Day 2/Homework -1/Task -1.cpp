@@ -2,15 +2,35 @@
 using namespace std;
 int main()
 {
-	int num;
-	cout << "Enter your value:";
-	cin >> num;
-	if (num % 2 == 0)
+	char op;
+	int num1, num2;
+	cout << "Enter your 1st Value: ";
+	cin >> num1;
+	cout << "Enter Operator (+ - / *:): ";
+	cin >> op;
+	cout << "Enter your 2nd value: ";
+	cin >> num2;
+
+	if (op == '+')
 	{
-		cout << "Your answer is even";
+		cout << "Answer: " << num1 + num2;
 	}
-	if (num % 2 != 0)
+	else if (op == '-')
 	{
-		cout << "Your answer is old";
+		cout << "Answer: " << num1 - num2;
 	}
+	else if (op == '*')
+	{
+		cout << "Answer: " << num1 * num2;
+	}
+	else if (op == '/')
+	{
+		cout << "Answer: " << num1 / num2;
+	}
+	else
+	{
+		cout << "You Enter Invalid Operator!";
+	}
+
+	return 0;
 }

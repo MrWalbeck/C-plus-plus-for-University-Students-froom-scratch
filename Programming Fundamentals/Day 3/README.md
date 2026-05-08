@@ -1,361 +1,217 @@
-# 🚀 Programming Fundamentals (COC1071) — Day 03
+# 🚀 Programming Fundamentals (COC1071) — Day 04
 
-### Control Flow Mastery & Practical Implementation
+## 🔁 Looping Mastery & Iteration Control
 
-> 📚 Course: Programming Fundamentals
-> 🏫 Code: COC1071
-> 💻 Language: C++
-> 🎯 Focus: Practical Application of Selection & Flow Control
-
----
-
-# 📖 Overview
-
-
-Welcome to **Day 3** of the *C++ From Scratch* journey! 🚀
-
-Today we consolidate **all the concepts from Day 2** and focus on **practical implementation of selection statements**. By the end of this session, you will:
-
-* Understand how to handle **user input** effectively.
-* Apply **sequential execution** in programs.
-* Master **decision-making constructs** including `if`, `if-else`, `if-else-if`, `nested if`, `ternary operator`, and `switch`.
-* Write **interactive programs** that respond dynamically to user input.
-
-This session bridges **concepts to practical application**, ensuring you can structure logical programs with multiple conditions confidently.
-
+> 📘 **Course:** Programming Fundamentals  
+> 🏷 **Code:** COC1071  
+> 💻 **Language:** C++  
+> 🎯 **Focus:** Practical Application of Loops & Iteration  
 
 ---
 
-# 📋 Topics Reviewed & Practiced
+## 📂 Overview
 
-1. **Input using `cin`** – Taking user input safely.
-2. **Sequence of statements** – Ensuring proper program flow.
-3. **Single Selection (`if`)** – Executing code only when a condition is true.
-4. **Double Selection (`if-else` & Ternary)** – Providing alternative execution paths.
-5. **Multiple Selection (`if-else-if` & `switch`)** – Handling multiple possible outcomes.
-6. **Nested `if`** – Dependent decisions inside another decision.
-7. **Dangling `else` problem** – Understanding proper association of `else` statements to avoid logical errors.
+Welcome to **Day 4** of the *C++ From Scratch* journey! 🚀  
+
+In this session, we learn about **loops**, which allow us to execute a block of code multiple times without rewriting it.
 
 ---
 
-# 🧠 Key Takeaways
+## 📚 Topics Covered
 
-* **Input & Flow:** Sequential execution matters; each statement runs in order unless directed otherwise by control statements.
-* **Decision Making:** Choose the simplest control structure appropriate for the problem:
-
-  * `if` → simple conditions
-  * `if-else` → two alternatives
-  * `if-else-if` → multiple conditions
-  * `nested if` → dependent conditions
-  * `ternary` → short, single-line decisions
-  * `switch` → multiple fixed-value choices
-* **Logical Safety:** Always use `{}` braces to prevent **dangling else** mistakes.
-* **Program Structuring:** Interactive programs should clearly prompt for input and display results.
+- `for` loop  
+- `while` loop  
+- `do-while` loop  
+- Nested loops  
 
 ---
 
-# 🔹 1️⃣ Input & Sequence Flow
+## 🔹 1. for Loop
 
-### 📘 Explanation
+### 📌 Explanation
 
-Programs execute **line by line from top to bottom** unless control statements change the flow.
-Input makes the program interactive.
+The `for` loop is used when the number of iterations is already known.  
+It has three parts: initialization, condition, and update.
 
-### 🧩 Syntax
+### 📌 Syntax
 
 ```cpp
-cin >> variable;
-```
-
-### ⭐ Important Points
-
-* Execution is sequential by default.
-* Each statement runs in order.
-* `cin` waits for user input.
-* Always display a message before taking input.
-
----
-
-# 🔹 2️⃣ Single Selection (`if`)
-
-### 📘 Explanation
-
-Used when we want to execute a block **only if a condition is true**.
-
-### 🧩 Syntax
-
-```cpp
-if(condition) {
-    // statements
+for (initialization; condition; update)
+{
+    // code block
 }
 ```
 
-### ⭐ Important Points
-
-* Condition must return true or false.
-* Runs only when condition is true.
-* Skips block if condition is false.
-
----
-
-# 🔹 3️⃣ Double Selection (`if-else`)
-
-### 📘 Explanation
-
-Used when there are **two possible outcomes**.
-
-### 🧩 Syntax
+### 💡 Example
 
 ```cpp
-if(condition) {
-    // true block
-} else {
-    // false block
-}
-```
+#include <iostream>
+using namespace std;
 
-### ⭐ Important Points
-
-* One block always executes.
-* Useful for even/odd, pass/fail type problems.
-* Improves logical branching.
-
----
-
-# 🔹 4️⃣ Multiple Selection
-
-## ➤ `if-else-if` Ladder
-
-### 📘 Explanation
-
-Used when checking **multiple conditions in order**.
-
-### 🧩 Syntax
-
-```cpp
-if(condition1) {
-}
-else if(condition2) {
-}
-else {
-}
-```
-
-### ⭐ Important Points
-
-* Conditions are checked top to bottom.
-* First true condition executes.
-* Order matters.
-
----
-
-## ➤ `switch` Statement
-
-### 📘 Explanation
-
-Used when comparing **one variable against multiple constant values**.
-
-### 🧩 Syntax
-
-```cpp
-switch(expression) {
-    case value:
-        break;
-    default:
-}
-```
-
-### ⭐ Important Points
-
-* Works with int, char.
-* Must use `break` to stop execution.
-* Cleaner than long `if-else-if`.
-
----
-
-# 🔹 5️⃣ Nested `if`
-
-### 📘 Explanation
-
-An `if` inside another `if`.
-Used when second condition depends on first.
-
-### 🧩 Syntax
-
-```cpp
-if(condition1) {
-    if(condition2) {
+int main()
+{
+    for (int i = 1; i <= 5; i++)
+    {
+        cout << i << endl;
     }
+    return 0;
 }
 ```
 
-### ⭐ Important Points
-
-* Inner `if` runs only if outer condition is true.
-* Used in grading systems, eligibility checks.
-* Improves logical structure.
+👉 This loop starts from 1 and prints numbers up to 5.
 
 ---
 
-# 🔹 6️⃣ Ternary Operator
+## 🔹 2. while Loop
 
-### 📘 Explanation
+### 📌 Explanation
 
-Short form of `if-else`.
-Used for simple decisions in one line.
+The `while` loop is used when the number of iterations is not known.  
+It runs as long as the condition is true.
 
-### 🧩 Syntax
+### 📌 Syntax
 
 ```cpp
-condition ? expression1 : expression2;
+while (condition)
+{
+    // code block
+}
 ```
 
-### ⭐ Important Points
+### 💡 Example
 
-* Good for short conditions only.
-* Avoid for complex logic.
-* Makes code shorter but must remain readable.
+```cpp
+#include <iostream>
+using namespace std;
 
----
+int main()
+{
+    int i = 1;
 
-# 🔹 7️⃣ Dangling Else
+    while (i <= 5)
+    {
+        cout << i << endl;
+        i++;
+    }
+    return 0;
+}
+```
 
-### 📘 Explanation
-
-Occurs when it is unclear which `if` an `else` belongs to.
-In C++, `else` attaches to the nearest unmatched `if`.
-
-### ⭐ Important Points
-
-* Always use `{}` braces.
-* Prevents logical confusion.
-* Improves readability.
-
----
-
-# 🧪 Day 3 – Structured Practice Tasks
-
-----
-
-## 1️⃣ Single Selection – `if`
-
-**Question:**
-Write a C++ program that:
-
-* Takes a number as input.
-* If the number is greater than 100, display:
-  `"Number is greater than 100"`.
-
-👉 Only use `if` statement.
-👉 Do not use `else`.
-
-----
-
-## 2️⃣ Double Selection – `if-else`
-
-**Question:**
-Write a C++ program that:
-
-* Takes an integer as input.
-* Checks whether the number is **even or odd**.
-* Displays the result accordingly.
-
-👉 Use `if-else` only.
-
-----
-
-## 3️⃣ Multiple Selection – `if-else-if`
-
-**Question:**
-Write a C++ program that:
-
-* Takes marks (0–100) as input.
-* Displays grade according to:
-
-| Marks    | Grade |
-| -------- | ----- |
-| 90+      | A     |
-| 75–89    | B     |
-| 60–74    | C     |
-| Below 60 | Fail  |
-
-👉 Use `if-else-if` ladder.
-👉 Conditions must be written in correct order.
-
-----
-
-## 4️⃣ Nested `if`
-
-**Question:**
-Write a C++ program that:
-
-* Takes age as input.
-* If age is 18 or above:
-
-  * Check if age is 60 or above → Display `"Senior Citizen"`
-  * Otherwise → Display `"Adult"`
-* If age is below 18 → Display `"Minor"`
-
-👉 Use nested `if`.
-
-----
-
-## 5️⃣ Ternary Operator
-
-**Question:**
-Write a C++ program that:
-
-* Takes a number as input.
-* Uses the ternary operator to check whether the number is **positive or negative**.
-* Display the result.
-
-👉 Use `?:` operator instead of `if-else`.
-
-----
-
-## 6️⃣ `switch` Statement
-
-**Question:**
-Write a C++ program that:
-
-* Displays a menu:
-
-  ```
-  1. Addition
-  2. Subtraction
-  3. Multiplication
-  ```
-* Takes user choice.
-* Performs operation on two numbers.
-* Displays result.
-* Shows `"Invalid Choice"` if input is not 1–3.
-
-👉 Use `switch` statement.
-👉 Must include `break`.
+👉 The loop continues until the condition becomes false.
 
 ---
 
-# 🎯 Practice Objective
+## 🔹 3. do-while Loop
 
-These tasks ensure students can:
+### 📌 Explanation
 
-* Apply each selection type correctly
-* Choose the correct control structure
-* Write logically structured programs
-* Avoid common mistakes
+The `do-while` loop executes the code **at least once**, even if the condition is false.
+
+### 📌 Syntax
+
+```cpp
+do
+{
+    // code block
+} while (condition);
+```
+
+### 💡 Example
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i = 1;
+
+    do
+    {
+        cout << i << endl;
+        i++;
+    } while (i <= 5);
+
+    return 0;
+}
+```
+
+👉 Code runs first, then condition is checked.
 
 ---
 
-# 📌 Day 3 Learning Outcomes
+## 🔁 Nested Loops
 
-By the end of Day 3, you will:
+### 📌 Explanation
 
-* ✔ Clearly understand program flow
-* ✔ Confidently use selection statements
-* ✔ Write logically structured conditions
-* ✔ Avoid common logical mistakes
-* ✔ Apply decision-making in real problems
+A nested loop means a loop inside another loop.  
+It is commonly used for patterns, tables, and complex logic.
 
 ---
 
-⭐ **Keep practicing and building your C++ foundation!** 🚀
+### 💡 Example 1: Star Pattern
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int i = 1; i <= 3; i++)
+    {
+        for (int j = 1; j <= 3; j++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+👉 Outer loop controls rows, inner loop controls columns.
+
+---
+
+### 💡 Example 2: Number Pattern
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int i = 1; i <= 3; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
+
+👉 Inner loop runs according to outer loop value.
+
+---
+
+## ✅ Summary
+
+- Loops help repeat code efficiently  
+- `for` loop → when iterations are known  
+- `while` loop → condition-based loop  
+- `do-while` → runs at least once  
+- Nested loops → used for patterns and complex logic  
+
+---
+
+## 🧠 Practice Suggestions
+
+- Print numbers from 1 to 100  
+- Print even/odd numbers  
+- Create multiplication tables  
+- Make star patterns  
+
+---
